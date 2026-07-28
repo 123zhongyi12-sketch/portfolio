@@ -5,7 +5,7 @@
     "subtitle": "云计算 · 方案设计 · 客户沟通",
     "about": "性格外向，皮实抗压。具备优秀的方案撰写、跨部门沟通与公众演讲能力。主导策划5+场大型校园活动，从方案撰写到预算申报到物资调配全流程负责，活动满意度达95%以上。拥有华为ICT大赛全球一等奖、HCIE/HCIP/HCIA等认证。希望能成为既懂技术又懂客户的IT工作者。",
     "skills": ["方案撰写", "客户沟通", "跨部门协调", "公众演讲", "云计算架构", "华为云", "项目管理", "需求分析"],
-    "projectOrder": ["huawei-ict", "cloud-architecture", "resume-assistant", "certifications"],
+    "projectOrder": ["huawei-ict", "cloud-architecture", "psychology-station", "resume-assistant", "certifications"],
     "highlights": ["华为ICT大赛全球一等奖", "HCIE(云计算)认证", "5+场大型活动策划", "学生会心理站站长"]
   },
   {
@@ -14,7 +14,7 @@
     "subtitle": "云计算架构 · 自动化 · 运维管理",
     "about": "拥有HCIE(云计算)、HCIP(大数据)、HCIA(AI)等华为认证，具备14天独立设计云上架构并成功部署的实践经验。掌握云计算、大数据、AI等多领域技术栈，具备扎实的技术功底和快速学习能力。",
     "skills": ["云计算架构", "华为云", "Linux", "网络配置", "自动化运维", "Docker", "Kubernetes", "Python"],
-    "projectOrder": ["cloud-architecture", "huawei-ict", "resume-assistant", "certifications"],
+    "projectOrder": ["cloud-architecture", "huawei-ict", "psychology-station", "resume-assistant", "certifications"],
     "highlights": ["HCIE(云计算)专家级认证", "14天自主云架构部署", "HCIP(大数据)认证", "HCIA(AI)认证"]
   },
   {
@@ -23,7 +23,7 @@
     "subtitle": "云安全 · 合规 · 防护方案",
     "about": "拥有HCIE(云计算)、HCIP(大数据)、HCIA(AI)等多领域华为认证，具备从底层架构到上层应用的安全视角。熟悉云安全架构设计、合规要求和最佳实践。",
     "skills": ["云安全架构", "网络安全", "数据安全", "合规审计", "华为云安全", "IAM", "加密与证书", "安全评估"],
-    "projectOrder": ["huawei-ict", "certifications", "cloud-architecture", "resume-assistant"],
+    "projectOrder": ["huawei-ict", "certifications", "cloud-architecture", "psychology-station", "resume-assistant"],
     "highlights": ["HCIE(云计算)认证", "华为ICT全球一等奖", "云迁移工作级认证", "解决方案架构认证"]
   }
 ]
