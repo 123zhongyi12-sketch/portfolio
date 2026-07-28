@@ -1,0 +1,37 @@
+[
+  {
+    "name": "resume-assistant",
+    "type": "folder",
+    "children": [
+      {
+        "name": "src",
+        "type": "folder",
+        "children": [
+          {
+            "name": "app",
+            "type": "folder",
+            "children": [
+              { "name": "page.tsx", "type": "file" },
+              { "name": "layout.tsx", "type": "file" },
+              { "name": "globals.css", "type": "file" },
+              {
+                "name": "api",
+                "type": "folder",
+                "children": [
+                  { "name": "analyze", "type": "folder", "children": [{ "name": "route.ts", "type": "file" }] },
+                  { "name": "chat", "type": "folder", "children": [{ "name": "route.ts", "type": "file" }] },
+                  { "name": "parse-file", "type": "folder", "children": [{ "name": "route.ts", "type": "file" }] }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "name": "package.json", "type": "file" },
+      { "name": "tsconfig.json", "type": "file" },
+      { "name": "next.config.ts", "type": "file" },
+      { "name": "README.md", "type": "file" },
+      { "name": ".env.local", "type": "file" }
+    ]
+  }
+]
