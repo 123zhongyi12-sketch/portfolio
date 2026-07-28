@@ -118,7 +118,23 @@ function ProjectDetailContent({
         </div>
       )}
 
-      {content.images.length > 0 && (
+      {content.images.length > 0 && project.category === "certification" ? (
+        <div className="rounded-lg border border-dark-border bg-dark-card p-6">
+          <h2 className="mb-4 text-xl font-bold">证书展示</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {content.images.map((img, i) => (
+              <div key={i} className="overflow-hidden rounded-lg border border-dark-border">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={img}
+                  alt={`${project.title} - ${i + 1}`}
+                  className="h-full w-full object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : content.images.length > 0 && (
         <div className="rounded-lg border border-dark-border bg-dark-card p-6">
           <h2 className="mb-4 text-xl font-bold">截图展示</h2>
           <ImageGallery images={content.images} title={project.title} />
