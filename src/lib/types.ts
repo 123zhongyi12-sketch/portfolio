@@ -43,7 +43,7 @@ export interface CampusExperience {
 export interface Project {
   slug: string;
   title: string;
-  category: "code" | "achievement" | "certification";
+  category: "code" | "achievement" | "certification" | "portfolio";
   description: string;
   tags: string[];
   techStack?: string[];

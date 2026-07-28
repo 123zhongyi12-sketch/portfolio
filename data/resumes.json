@@ -22,7 +22,7 @@
       "项目管理与资源统筹",
       "抗压能力与现场应变"
     ],
-    "projectOrder": ["huawei-ict", "cloud-architecture", "resume-assistant", "certifications"],
+    "projectOrder": ["huawei-ict", "cloud-architecture", "certifications"],
     "highlights": ["华为ICT大赛全球一等奖", "HCIE(云计算)认证", "5+场大型活动策划"]
   },
   {
@@ -48,7 +48,7 @@
       "项目管理",
       "抗压与执行力"
     ],
-    "projectOrder": ["cloud-architecture", "huawei-ict", "resume-assistant", "certifications"],
+    "projectOrder": ["cloud-architecture", "huawei-ict", "certifications"],
     "highlights": ["HCIE(云计算)专家级认证", "14天自主云架构部署", "HCIP(大数据)认证", "HCIA(AI)认证"]
   },
   {
@@ -74,7 +74,7 @@
       "客户需求理解",
       "抗压与执行力"
     ],
-    "projectOrder": ["huawei-ict", "certifications", "cloud-architecture", "resume-assistant"],
+    "projectOrder": ["huawei-ict", "certifications", "cloud-architecture"],
     "highlights": ["HCIE(云计算)认证", "华为ICT全球一等奖", "云迁移工作级认证", "解决方案架构认证"]
   }
 ]

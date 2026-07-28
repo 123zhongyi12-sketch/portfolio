@@ -1,0 +1,87 @@
+[
+  {
+    "name": "campus-network",
+    "type": "folder",
+    "children": [
+      { "name": "campus network.topo", "type": "file" },
+      {
+        "name": "vlan",
+        "type": "folder",
+        "children": [
+          { "name": "实训手册3-1 以太网交换机与VLAN实验.doc", "type": "file" }
+        ]
+      },
+      {
+        "name": "acl",
+        "type": "folder",
+        "children": [
+          { "name": "acl.topo", "type": "file" },
+          { "name": "实训手册4-1 ACL原理与应用实验.doc", "type": "file" }
+        ]
+      },
+      {
+        "name": "ospf",
+        "type": "folder",
+        "children": [
+          { "name": "ospf.topo", "type": "file" },
+          { "name": "实训手册2-3 OSPF实验.doc", "type": "file" }
+        ]
+      },
+      {
+        "name": "FW",
+        "type": "folder",
+        "children": [
+          { "name": "FW.topo", "type": "file" },
+          { "name": "实训手册9-3 防火墙配置实验.doc", "type": "file" }
+        ]
+      },
+      {
+        "name": "DHCP",
+        "type": "folder",
+        "children": [
+          { "name": "DHCP.topo", "type": "file" },
+          { "name": "实训手册5-2 网关与DHCP实验.doc", "type": "file" }
+        ]
+      },
+      {
+        "name": "eth-trunk",
+        "type": "folder",
+        "children": [
+          { "name": "eth-trunk.topo", "type": "file" },
+          { "name": "实训手册3-4 以太网链路聚合实验.doc", "type": "file" }
+        ]
+      },
+      {
+        "name": "nat",
+        "type": "folder",
+        "children": [
+          { "name": "nat.topo", "type": "file" },
+          { "name": "实训手册4-3 NAT实验.doc", "type": "file" }
+        ]
+      },
+      {
+        "name": "wlan",
+        "type": "folder",
+        "children": [
+          { "name": "wlan.topo", "type": "file" },
+          { "name": "实训手册6-1 WLAN实验.doc", "type": "file" }
+        ]
+      },
+      {
+        "name": "ipv4-routing",
+        "type": "folder",
+        "children": [
+          { "name": "ipv4编址及路由基础.topo", "type": "file" },
+          { "name": "实训手册2-2 IPv4地址与路由基础实验.doc", "type": "file" }
+        ]
+      },
+      {
+        "name": "stp",
+        "type": "folder",
+        "children": [
+          { "name": "实训手册3-2 STP生成树实验.doc", "type": "file" }
+        ]
+      }
+    ]
+  }
+]

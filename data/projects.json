@@ -2,7 +2,7 @@
   {
     "slug": "resume-assistant",
     "title": "AI面试助手",
-    "category": "code",
+    "category": "portfolio",
     "description": "基于大模型的AI面试准备助手，支持JD分析、多轮模拟面试、实时评分与总结报告",
     "tags": ["Next.js", "TypeScript", "AI Agent", "OpenAI", "Tailwind"],
     "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "OpenRouter API", "AI Agent"],
@@ -10,8 +10,34 @@
     "images": ["/images/projects/resume-assistant-1.jpg"],
     "githubUrl": "https://github.com/123zhongyi12-sketch/resume-interview-agent",
     "year": "2026",
-    "resumeTargets": ["presales", "ops", "cloud-security"],
+    "resumeTargets": [],
     "summary": "这是一个具备面试流程控制能力的AI Agent，非简单问答。它基于岗位JD+分析结果+对话上下文进行推理，具备连续提问、结构化评分、自动生成总结报告等核心能力。"
+  },
+  {
+    "slug": "ecg-ai",
+    "title": "心电AI检测",
+    "category": "portfolio",
+    "description": "基于深度学习的心电AI检测微信小程序，支持蓝牙连接硬件设备实时监测心电波形与心率",
+    "tags": ["微信小程序", "TensorFlow", "BLE", "Flask", "心电检测"],
+    "techStack": ["微信小程序", "WXML/WXSS", "JavaScript", "Python Flask", "TensorFlow", "BLE蓝牙通信"],
+    "image": "/content/projects/ecg-ai/images/ecg-ai-cover.jpg",
+    "images": ["/content/projects/ecg-ai/images/ecg-ai-screenshot-1.jpg"],
+    "year": "2026",
+    "resumeTargets": [],
+    "summary": "从零搭建的一套完整心电AI检测系统，涵盖STM32蓝牙硬件通信协议、深度学习模型训练与部署、微信小程序前端展示、Flask云端推理服务全链路。"
+  },
+  {
+    "slug": "campus-network",
+    "title": "园区网综合设计与仿真",
+    "category": "portfolio",
+    "description": "基于华为eNSP的园区网综合实验项目，涵盖VLAN/ACL/OSPF/防火墙/DHCP/NAT/WLAN等全栈网络技术",
+    "tags": ["eNSP", "VLAN", "OSPF", "ACL", "防火墙", "WLAN"],
+    "techStack": ["华为eNSP", "VLAN/Trunk", "OSPF动态路由", "ACL访问控制", "防火墙策略", "DHCP/NAT", "WLAN", "Eth-Trunk", "STP"],
+    "image": "/content/projects/campus-network/images/campus-network-topo.png",
+    "images": ["/content/projects/campus-network/images/campus-network-topo.png"],
+    "year": "2025",
+    "resumeTargets": [],
+    "summary": "大一小学期综合实训项目，使用华为eNSP模拟器从零搭建完整园区网络，系统性地实践了交换、路由、安全、无线等网络核心技术。"
   },
   {
     "slug": "cloud-architecture",

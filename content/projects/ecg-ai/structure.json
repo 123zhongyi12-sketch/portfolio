@@ -1,0 +1,77 @@
+[
+  {
+    "name": "wx-miniprogram",
+    "type": "folder",
+    "children": [
+      {
+        "name": "pages",
+        "type": "folder",
+        "children": [
+          {
+            "name": "index",
+            "type": "folder",
+            "children": [
+              { "name": "index.js", "type": "file" },
+              { "name": "index.wxml", "type": "file" },
+              { "name": "index.wxss", "type": "file" },
+              { "name": "index.json", "type": "file" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "components",
+        "type": "folder",
+        "children": [
+          {
+            "name": "navigation-bar",
+            "type": "folder",
+            "children": [
+              { "name": "navigation-bar.js", "type": "file" },
+              { "name": "navigation-bar.wxml", "type": "file" },
+              { "name": "navigation-bar.wxss", "type": "file" },
+              { "name": "navigation-bar.json", "type": "file" }
+            ]
+          }
+        ]
+      },
+      { "name": "app.js", "type": "file" },
+      { "name": "app.json", "type": "file" },
+      { "name": "app.wxss", "type": "file" },
+      { "name": "project.config.json", "type": "file" },
+      { "name": "sitemap.json", "type": "file" }
+    ]
+  },
+  {
+    "name": "backend",
+    "type": "folder",
+    "children": [
+      { "name": "app.py", "type": "file" },
+      { "name": "ecg_model.keras", "type": "file" },
+      { "name": "requirements.txt", "type": "file" }
+    ]
+  },
+  {
+    "name": "model",
+    "type": "folder",
+    "children": [
+      {
+        "name": "ECG_FINISH_WITH_baseline_wander",
+        "type": "folder",
+        "children": [
+          { "name": "训练脚本.ipynb", "type": "file" },
+          { "name": "数据集说明.txt", "type": "file" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "docs",
+    "type": "folder",
+    "children": [
+      { "name": "项目方案.pptx", "type": "file" },
+      { "name": "产品说明书.pdf", "type": "file" },
+      { "name": "产品说明书.docx", "type": "file" }
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Project } from "@/lib/types";
-import { ArrowUpRight, FolderClosed, Award, BadgeCheck } from "lucide-react";
+import { ArrowUpRight, FolderClosed, Award, BadgeCheck, Code2 } from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
@@ -10,12 +10,14 @@ const categoryIcons = {
   code: FolderClosed,
   achievement: Award,
   certification: BadgeCheck,
+  portfolio: Code2,
 };
 
 const categoryLabels: Record<string, string> = {
   code: "项目",
   achievement: "成果",
   certification: "认证",
+  portfolio: "作品集",
 };
 
 export default function ProjectCard({ project }: ProjectCardProps) {

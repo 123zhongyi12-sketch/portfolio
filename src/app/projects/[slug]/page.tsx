@@ -38,11 +38,11 @@ export default async function ProjectPage({ params }: Props) {
       <Header title={profile.name} />
       <main className="mx-auto max-w-6xl px-6 pt-24 pb-16">
         <Link
-          href="/"
+          href={project.category === "portfolio" ? "/portfolio" : "/"}
           className="mb-8 inline-flex items-center gap-2 text-sm text-text-muted transition-colors hover:text-accent"
         >
           <ArrowLeft className="h-4 w-4" />
-          返回首页
+          {project.category === "portfolio" ? "返回作品集" : "返回首页"}
         </Link>
 
         <div className="mb-8">
@@ -64,7 +64,7 @@ export default async function ProjectPage({ params }: Props) {
           </div>
         </div>
 
-        {project.category === "code" && content.structure ? (
+        {(project.category === "code" || project.category === "portfolio") && content.structure ? (
           <div className="grid gap-8 lg:grid-cols-[320px_1fr]">
             <div className="lg:sticky lg:top-20 lg:self-start">
               <ProjectFileTree structure={content.structure} />

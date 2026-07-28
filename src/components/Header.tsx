@@ -12,6 +12,9 @@ export default function Header({ title }: HeaderProps) {
           {title}
         </Link>
         <nav className="flex items-center gap-6 text-sm">
+          <Link href="/portfolio" className="text-text-secondary hover:text-accent transition-colors">
+            作品集
+          </Link>
           <Link href="#projects" className="text-text-secondary hover:text-accent transition-colors">
             项目
           </Link>
