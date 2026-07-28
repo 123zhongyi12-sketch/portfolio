@@ -1,0 +1,64 @@
+[
+  {
+    "slug": "resume-assistant",
+    "title": "AI面试助手",
+    "category": "code",
+    "description": "基于大模型的AI面试准备助手，支持JD分析、多轮模拟面试、实时评分与总结报告",
+    "tags": ["Next.js", "TypeScript", "AI Agent", "OpenAI", "Tailwind"],
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "OpenRouter API", "AI Agent"],
+    "image": "/images/projects/resume-assistant-cover.jpg",
+    "images": ["/images/projects/resume-assistant-1.jpg"],
+    "githubUrl": "https://github.com/zhongyi/resume-assistant",
+    "year": "2026",
+    "resumeTargets": ["presales", "ops", "cloud-security"],
+    "summary": "这是一个具备面试流程控制能力的AI Agent，非简单问答。它基于岗位JD+分析结果+对话上下文进行推理，具备连续提问、结构化评分、自动生成总结报告等核心能力。"
+  },
+  {
+    "slug": "cloud-architecture",
+    "title": "14天自主设计云架构并部署",
+    "category": "achievement",
+    "description": "独立在14天内完成云上架构设计并成功部署，涵盖计算、网络、存储、安全等核心服务",
+    "tags": ["华为云", "云架构", "部署", "网络", "安全"],
+    "image": "/images/projects/cloud-architecture-cover.jpg",
+    "images": ["/images/projects/cloud-architecture-1.jpg"],
+    "year": "2026",
+    "resumeTargets": ["presales", "ops", "cloud-security"],
+    "summary": "在14天时间内，独立完成从需求分析、架构设计到部署上线的全流程，充分展示了扎实的云计算架构功底和快速学习能力。"
+  },
+  {
+    "slug": "huawei-ict",
+    "title": "华为ICT大赛全球一等奖",
+    "category": "achievement",
+    "description": "第十届华为ICT大赛全球总决赛云赛道全球一等奖",
+    "tags": ["华为ICT", "云计算", "全球一等奖"],
+    "image": "/images/projects/huawei-ict-cover.jpg",
+    "images": ["/images/projects/huawei-ict-cert.jpg"],
+    "year": "2026",
+    "resumeTargets": ["presales", "ops", "cloud-security"],
+    "summary": "在华为ICT大赛全球总决赛云赛道中获得全球一等奖，与全球顶尖选手同台竞技，展现了扎实的云计算技术实力。"
+  },
+  {
+    "slug": "certifications",
+    "title": "华为认证体系",
+    "category": "certification",
+    "description": "HCIE(云计算)、HCIP(大数据)、HCIA(AI)、云迁移工作级、解决方案架构工作级",
+    "tags": ["HCIE", "HCIP", "HCIA", "华为认证"],
+    "image": "/images/projects/certifications-cover.jpg",
+    "images": [],
+    "year": "2025-2026",
+    "resumeTargets": ["presales", "ops", "cloud-security"],
+    "summary": "系统性地获得了从专家级(HCIE)到工程师级的华为认证体系，覆盖云计算、大数据、AI三大方向。"
+  },
+  {
+    "slug": "psychology-station",
+    "title": "学生会心理站站长",
+    "category": "achievement",
+    "description": "主导策划5+场大型活动，活动满意度95%以上，锻炼极强的跨部门沟通与资源整合能力",
+    "tags": ["团队管理", "活动策划", "沟通协调"],
+    "image": "/images/projects/psychology-station-cover.jpg",
+    "images": [],
+    "year": "2023-2024",
+    "resumeTargets": ["presales"],
+    "summary": "作为学生会心理站站长，主导策划新生破冰、元宵游园会等5+场大型活动，覆盖全院师生。从方案撰写、预算申报到物资调配全流程负责，活动满意度达95%以上。"
+  }
+]
