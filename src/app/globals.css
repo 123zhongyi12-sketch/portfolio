@@ -26,6 +26,16 @@ body {
   background-color: var(--color-dark-bg);
   color: var(--color-text-primary);
   font-family: var(--font-sans);
+  background-image:
+    /* 细微网格 */
+    linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+    /* 顶部光晕 */
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.08) 0%, transparent 70%),
+    /* 底部光晕 */
+    radial-gradient(ellipse 60% 30% at 50% 120%, rgba(6, 182, 212, 0.06) 0%, transparent 70%);
+  background-size: 80px 80px, 80px 80px, 100% 100%, 100% 100%;
+  background-attachment: fixed;
 }
 
 ::selection {
