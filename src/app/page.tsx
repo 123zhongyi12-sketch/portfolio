@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
@@ -10,6 +11,16 @@ import PortfolioSection from "@/components/PortfolioSection";
 import { getProfile, getResume, getProjectsForResume, getAllResumes } from "@/lib/data";
 
 export const dynamic = "force-static";
+
+export function generateMetadata(): Metadata {
+  const slug = process.env.NEXT_PUBLIC_RESUME_SLUG;
+  const titles: Record<string, string> = {
+    presales: "钟懿 | 解决方案技术支持工程师",
+    ops: "钟懿 | IT运维工程师",
+    "cloud-security": "钟懿 | 云安全工程师",
+  };
+  return { title: slug && titles[slug] ? titles[slug] : "钟懿 | 解决方案技术支持工程师" };
+}
 
 export default function Home() {
   const resumeSlug = process.env.NEXT_PUBLIC_RESUME_SLUG;
