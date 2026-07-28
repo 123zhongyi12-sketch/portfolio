@@ -5,6 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import SkillCloud from "@/components/SkillCloud";
 import EducationSection from "@/components/EducationSection";
 import CampusSection from "@/components/CampusSection";
+import PortfolioSection from "@/components/PortfolioSection";
 import { getProfile, getResume, getProjectsForResume } from "@/lib/data";
 import type { Metadata } from "next";
 
@@ -38,6 +39,9 @@ export default function PresalesPage() {
             ))}
           </div>
         </section>
+
+        {/* 作品集 */}
+        <PortfolioSection />
 
         {/* 教育背景 */}
         <EducationSection resumeSlug="presales" />

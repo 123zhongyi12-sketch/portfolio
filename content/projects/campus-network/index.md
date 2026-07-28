@@ -1,4 +1,4 @@
-大一小学校期综合实训项目，使用华为eNSP（Enterprise Network Simulation Platform）模拟器从零搭建完整园区网络，系统性地实践了交换、路由、安全、无线等网络核心技术。
+综合实训项目，使用华为eNSP（Enterprise Network Simulation Platform）模拟器从零搭建完整园区网络，系统性地实践了交换、路由、安全、无线等网络核心技术。
 
 ## 项目概述
 

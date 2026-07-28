@@ -37,7 +37,7 @@
     "images": ["/content/projects/campus-network/images/campus-network-topo.png"],
     "year": "2025",
     "resumeTargets": [],
-    "summary": "大一小学期综合实训项目，使用华为eNSP模拟器从零搭建完整园区网络，系统性地实践了交换、路由、安全、无线等网络核心技术。"
+    "summary": "使用华为eNSP模拟器从零搭建完整园区网络，系统性地实践了交换、路由、安全、无线等网络核心技术。"
   },
   {
     "slug": "cloud-architecture",

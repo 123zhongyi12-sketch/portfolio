@@ -5,6 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import SkillCloud from "@/components/SkillCloud";
 import EducationSection from "@/components/EducationSection";
 import CampusSection from "@/components/CampusSection";
+import PortfolioSection from "@/components/PortfolioSection";
 import { getProfile, getResume, getProjectsForResume } from "@/lib/data";
 import type { Metadata } from "next";
 
@@ -36,6 +37,8 @@ export default function OpsPage() {
             ))}
           </div>
         </section>
+
+        <PortfolioSection />
 
         <EducationSection resumeSlug="ops" />
         <CampusSection />
