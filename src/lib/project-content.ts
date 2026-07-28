@@ -24,7 +24,7 @@ export function getProjectContent(slug: string): ProjectContent {
   }
 
   let images: string[] = [];
-  const imagesDir = path.join(contentDir, "images");
+  const imagesDir = path.join(process.cwd(), "public", "content", "projects", slug, "images");
   if (fs.existsSync(imagesDir)) {
     images = fs.readdirSync(imagesDir)
       .filter((f) => /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(f))

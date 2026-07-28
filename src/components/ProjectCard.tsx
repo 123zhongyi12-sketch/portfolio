@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { Project } from "@/lib/types";
-import { ArrowUpRight, FolderCode, Award, Certificate } from "lucide-react";
+import { ArrowUpRight, FolderClosed, Award, BadgeCheck } from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
 }
 
 const categoryIcons = {
-  code: FolderCode,
+  code: FolderClosed,
   achievement: Award,
-  certification: Certificate,
+  certification: BadgeCheck,
 };
 
 const categoryLabels: Record<string, string> = {
