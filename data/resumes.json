@@ -4,7 +4,24 @@
     "title": "解决方案售前工程师",
     "subtitle": "云计算 · 方案设计 · 客户沟通",
     "about": "性格外向，皮实抗压。具备优秀的方案撰写、跨部门沟通与公众演讲能力。主导策划5+场大型校园活动，从方案撰写到预算申报到物资调配全流程负责，活动满意度达95%以上。拥有华为ICT大赛全球一等奖、HCIE/HCIP/HCIA等认证。希望能成为既懂技术又懂客户的IT工作者。",
-    "skills": ["方案撰写", "客户沟通", "跨部门协调", "公众演讲", "云计算架构", "华为云", "项目管理", "需求分析"],
+    "skills": [
+      "华为云IaaS/PaaS全栈产品",
+      "云架构设计与迁移(SMS/OMS/DRS)",
+      "Docker & Kubernetes",
+      "Linux (Ubuntu/CentOS)",
+      "Python自动化脚本",
+      "AI/ML & RAG & LangChain",
+      "计算机网络与TCP/IP",
+      "OpenStack & FusionComputer"
+    ],
+    "softSkills": [
+      "方案撰写与文档能力",
+      "跨部门沟通与协调",
+      "公众演讲与方案宣讲",
+      "客户需求分析与洞察",
+      "项目管理与资源统筹",
+      "抗压能力与现场应变"
+    ],
     "projectOrder": ["huawei-ict", "cloud-architecture", "psychology-station", "resume-assistant", "certifications"],
     "highlights": ["华为ICT大赛全球一等奖", "HCIE(云计算)认证", "5+场大型活动策划", "学生会心理站站长"]
   },
@@ -12,8 +29,25 @@
     "slug": "ops",
     "title": "云运维工程师",
     "subtitle": "云计算架构 · 自动化 · 运维管理",
-    "about": "拥有HCIE(云计算)、HCIP(大数据)、HCIA(AI)等华为认证，具备14天独立设计云上架构并成功部署的实践经验。掌握云计算、大数据、AI等多领域技术栈，具备扎实的技术功底和快速学习能力。",
-    "skills": ["云计算架构", "华为云", "Linux", "网络配置", "自动化运维", "Docker", "Kubernetes", "Python"],
+    "about": "拥有HCIE(云计算)、HCIP(大数据)、HCIA(AI)等华为认证，具备独立设计云上架构并成功部署的实践经验。掌握云计算、大数据、AI等多领域技术栈，具备扎实的技术功底和快速学习能力。",
+    "skills": [
+      "华为云IaaS/PaaS全栈产品",
+      "云架构设计与迁移",
+      "Docker & Kubernetes",
+      "Linux运维 (Ubuntu/CentOS)",
+      "Python自动化脚本",
+      "LTS/CES/APM可观测体系",
+      "计算机网络与安全",
+      "OpenStack & FusionComputer"
+    ],
+    "softSkills": [
+      "技术文档撰写",
+      "跨团队协作",
+      "故障排查与分析",
+      "快速学习能力",
+      "项目管理",
+      "抗压与执行力"
+    ],
     "projectOrder": ["cloud-architecture", "huawei-ict", "psychology-station", "resume-assistant", "certifications"],
     "highlights": ["HCIE(云计算)专家级认证", "14天自主云架构部署", "HCIP(大数据)认证", "HCIA(AI)认证"]
   },
@@ -22,7 +56,24 @@
     "title": "云安全工程师",
     "subtitle": "云安全 · 合规 · 防护方案",
     "about": "拥有HCIE(云计算)、HCIP(大数据)、HCIA(AI)等多领域华为认证，具备从底层架构到上层应用的安全视角。熟悉云安全架构设计、合规要求和最佳实践。",
-    "skills": ["云安全架构", "网络安全", "数据安全", "合规审计", "华为云安全", "IAM", "加密与证书", "安全评估"],
+    "skills": [
+      "华为云安全体系(HSS/ACL)",
+      "等保合规与安全基线",
+      "云上网络与VPC设计",
+      "Docker & K8s安全",
+      "Linux安全加固",
+      "IAM与访问控制",
+      "数据加密与证书管理",
+      "安全评估与审计"
+    ],
+    "softSkills": [
+      "安全方案设计",
+      "技术文档撰写",
+      "合规分析与评估",
+      "跨团队沟通",
+      "客户需求理解",
+      "抗压与执行力"
+    ],
     "projectOrder": ["huawei-ict", "certifications", "cloud-architecture", "psychology-station", "resume-assistant"],
     "highlights": ["HCIE(云计算)认证", "华为ICT全球一等奖", "云迁移工作级认证", "解决方案架构认证"]
   }

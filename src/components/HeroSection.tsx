@@ -4,12 +4,21 @@ interface HeroSectionProps {
   resumeSlug: string;
 }
 
+const strengths: Record<string, string> = {
+  presales:
+    "具备扎实的云计算技术功底（HCIE认证）与AI应用能力，能站在客户业务视角将复杂技术转化为通俗易懂的商业解决方案。拥有华为ICT大赛全球一等奖的实战证明，具备优秀的方案撰写、公众演讲与跨部门沟通能力。性格外向、皮实抗压，立志成为既懂技术又懂客户的售前工程师。",
+  ops:
+    "拥有HCIE云计算专家级认证及HCIP/HCIA等多领域认证，具备从架构设计到部署运维的全栈能力。独立完成企业级云上架构设计与交付，熟练掌握华为云全栈产品、Docker/K8s容器化及Linux运维。以结果为导向，执行力强，能快速掌握新领域并解决实际问题。",
+  cloudSecurity:
+    "以HCIE认证为基础构建了从底层架构到上层安全的完整知识体系，深入理解云上安全边界设计、等保合规要求及IAM访问控制。具备企业级云架构设计与安全防护方案的落地经验，能将安全合规与业务需求有机结合，提供端到端的安全解决方案。",
+};
+
 export default function HeroSection({ resumeSlug }: HeroSectionProps) {
   const profile = getProfile();
   const resume = getResume(resumeSlug);
 
   return (
-    <section className="relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden px-6 pt-16 text-center">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-16 text-center">
       {/* 网格背景 */}
       <div
         className="absolute inset-0 opacity-[0.03]"
@@ -26,32 +35,6 @@ export default function HeroSection({ resumeSlug }: HeroSectionProps) {
       <div className="pointer-events-none absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-accent/10 blur-[120px]" />
       <div className="pointer-events-none absolute -bottom-40 right-0 h-[400px] w-[400px] rounded-full bg-accent-secondary/8 blur-[100px]" />
 
-      {/* 浮动技能标签装饰 */}
-      {resume && (
-        <div className="pointer-events-none absolute inset-0 hidden md:block">
-          {resume.skills.slice(0, 8).map((skill, i) => {
-            const angle = (i / 8) * 360;
-            const radius = 200 + Math.random() * 100;
-            const x = 50 + (radius * Math.cos((angle * Math.PI) / 180)) / 6;
-            const y = 50 + (radius * Math.sin((angle * Math.PI) / 180)) / 6;
-            return (
-              <span
-                key={skill}
-                className="absolute animate-pulse text-sm text-accent/20"
-                style={{
-                  left: `${x}%`,
-                  top: `${y}%`,
-                  animationDelay: `${i * 0.5}s`,
-                  animationDuration: "3s",
-                }}
-              >
-                {skill}
-              </span>
-            );
-          })}
-        </div>
-      )}
-
       {/* 头像 */}
       <div className="relative mb-6 h-24 w-24 rounded-full bg-gradient-to-br from-accent to-accent-secondary p-0.5 shadow-lg shadow-accent/20">
         <div className="flex h-full w-full items-center justify-center rounded-full bg-dark-bg text-3xl font-bold text-accent">
@@ -66,7 +49,7 @@ export default function HeroSection({ resumeSlug }: HeroSectionProps) {
       {resume && (
         <>
           <p className="relative mb-2 text-xl text-accent-secondary">{resume.title}</p>
-          <p className="relative mb-4 text-text-muted">{resume.subtitle}</p>
+          <p className="relative mb-6 text-text-muted">{resume.subtitle}</p>
 
           {/* 高亮标签 */}
           <div className="relative flex flex-wrap justify-center gap-3">
@@ -77,31 +60,22 @@ export default function HeroSection({ resumeSlug }: HeroSectionProps) {
             ))}
           </div>
 
-          {/* 技能列表 — 直接展示在 Hero 区 */}
-          <div className="relative mt-8 flex max-w-2xl flex-wrap justify-center gap-2">
-            {resume.skills.map((skill) => (
-              <span
-                key={skill}
-                className="rounded-md border border-dark-border bg-dark-card/80 px-3 py-1 text-xs text-text-muted backdrop-blur-sm transition-colors hover:border-accent/50 hover:text-accent"
-              >
-                {skill}
-              </span>
-            ))}
+          {/* 个人优势段落 */}
+          <div className="relative mt-8 max-w-3xl rounded-lg border border-accent/10 bg-accent/[0.02] p-6 text-left">
+            <h2 className="mb-3 text-sm font-semibold tracking-wider text-accent uppercase">个人优势</h2>
+            <p className="leading-relaxed text-text-secondary">
+              {strengths[resumeSlug]}
+            </p>
           </div>
         </>
       )}
 
-      {/* tagline */}
-      <p className="relative mt-6 max-w-2xl text-lg text-text-secondary">
-        {profile.tagline}
-      </p>
-
       {/* CTA */}
       <a
-        href="#projects"
+        href="#skills"
         className="relative mt-8 rounded-lg bg-accent px-6 py-3 font-medium text-white transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25"
       >
-        查看我的项目 ↓
+        了解更多 ↓
       </a>
     </section>
   );

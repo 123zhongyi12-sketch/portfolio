@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import ProjectCard from "@/components/ProjectCard";
 import SkillCloud from "@/components/SkillCloud";
+import EducationSection from "@/components/EducationSection";
+import CampusSection from "@/components/CampusSection";
 import { getProfile, getResume, getProjectsForResume } from "@/lib/data";
 import type { Metadata } from "next";
 
@@ -21,14 +23,13 @@ export default function PresalesPage() {
       <main>
         <HeroSection resumeSlug="presales" />
 
-        <section className="mx-auto max-w-4xl px-6 py-20">
-          <h2 className="mb-8 text-center text-2xl font-bold">关于我</h2>
-          <p className="text-center text-lg leading-relaxed text-text-secondary">{resume.about}</p>
-          <div className="mt-8">
-            <SkillCloud skills={resume.skills} />
-          </div>
+        {/* 技能 */}
+        <section id="skills" className="mx-auto max-w-4xl px-6 py-20">
+          <h2 className="mb-8 text-center text-2xl font-bold">掌握技能</h2>
+          <SkillCloud skills={resume.skills} softSkills={resume.softSkills} />
         </section>
 
+        {/* 项目 */}
         <section id="projects" className="mx-auto max-w-6xl px-6 py-20">
           <h2 className="mb-8 text-center text-2xl font-bold">项目与成果</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -37,6 +38,12 @@ export default function PresalesPage() {
             ))}
           </div>
         </section>
+
+        {/* 教育背景 */}
+        <EducationSection resumeSlug="presales" />
+
+        {/* 校园经历 */}
+        <CampusSection />
       </main>
       <Footer />
     </>

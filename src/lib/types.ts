@@ -18,8 +18,26 @@ export interface Resume {
   subtitle: string;
   about: string;
   skills: string[];
+  softSkills: string[];
   projectOrder: string[];
   highlights: string[];
+}
+
+export interface Education {
+  school: string;
+  major: string;
+  degree: string;
+  period: string;
+  courses: string[];
+  note?: string;
+}
+
+export interface CampusExperience {
+  title: string;
+  role: string;
+  period: string;
+  items: string[];
+  type: "organization" | "volunteer" | "honor";
 }
 
 export interface Project {

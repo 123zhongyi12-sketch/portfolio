@@ -1,7 +1,9 @@
-import { Profile, Resume, Project } from "./types";
+import { Profile, Resume, Project, Education, CampusExperience } from "./types";
 import profileData from "../../data/profile.json";
 import resumesData from "../../data/resumes.json";
 import projectsData from "../../data/projects.json";
+import educationData from "../../data/education.json";
+import campusData from "../../data/campus.json";
 
 export function getProfile(): Profile {
   return profileData as Profile;
@@ -13,6 +15,14 @@ export function getResume(slug: string): Resume | undefined {
 
 export function getAllResumes(): Resume[] {
   return resumesData as Resume[];
+}
+
+export function getEducation(): Education {
+  return educationData as Education;
+}
+
+export function getCampusExperiences(): CampusExperience[] {
+  return campusData as CampusExperience[];
 }
 
 export function getProjects(): Project[] {

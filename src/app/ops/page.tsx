@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import ProjectCard from "@/components/ProjectCard";
 import SkillCloud from "@/components/SkillCloud";
+import EducationSection from "@/components/EducationSection";
+import CampusSection from "@/components/CampusSection";
 import { getProfile, getResume, getProjectsForResume } from "@/lib/data";
 import type { Metadata } from "next";
 
@@ -21,12 +23,9 @@ export default function OpsPage() {
       <main>
         <HeroSection resumeSlug="ops" />
 
-        <section className="mx-auto max-w-4xl px-6 py-20">
-          <h2 className="mb-8 text-center text-2xl font-bold">关于我</h2>
-          <p className="text-center text-lg leading-relaxed text-text-secondary">{resume.about}</p>
-          <div className="mt-8">
-            <SkillCloud skills={resume.skills} />
-          </div>
+        <section id="skills" className="mx-auto max-w-4xl px-6 py-20">
+          <h2 className="mb-8 text-center text-2xl font-bold">掌握技能</h2>
+          <SkillCloud skills={resume.skills} softSkills={resume.softSkills} />
         </section>
 
         <section id="projects" className="mx-auto max-w-6xl px-6 py-20">
@@ -37,6 +36,9 @@ export default function OpsPage() {
             ))}
           </div>
         </section>
+
+        <EducationSection resumeSlug="ops" />
+        <CampusSection />
       </main>
       <Footer />
     </>
