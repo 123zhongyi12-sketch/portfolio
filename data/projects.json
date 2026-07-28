@@ -44,13 +44,13 @@
     "category": "certification",
     "description": "HCIE(云计算)、HCIP(大数据)、HCIA(AI)、云迁移工作级、解决方案架构工作级、云技术开发认证",
     "tags": ["HCIE", "HCIP", "HCIA", "华为认证"],
-    "image": "/content/projects/certifications/images/hcie-cert.png",
+    "image": "/content/projects/certifications/images/01-hcie-cert.png",
     "images": [
-      "/content/projects/certifications/images/hcie-cert.png",
-      "/content/projects/certifications/images/hcip-cert.png",
-      "/content/projects/certifications/images/hcia-cert.png",
-      "/content/projects/certifications/images/arch-cert.png",
-      "/content/projects/certifications/images/migration-cert.png"
+      "/content/projects/certifications/images/01-hcie-cert.png",
+      "/content/projects/certifications/images/02-hcip-cert.png",
+      "/content/projects/certifications/images/03-hcia-cert.png",
+      "/content/projects/certifications/images/04-arch-cert.png",
+      "/content/projects/certifications/images/05-migration-cert.png"
     ],
     "year": "2025-2026",
     "resumeTargets": ["presales", "ops", "cloud-security"],
