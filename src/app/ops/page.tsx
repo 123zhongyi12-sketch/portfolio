@@ -10,7 +10,7 @@ import { getProfile, getResume, getProjectsForResume } from "@/lib/data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "钟懿 | 云运维工程师",
+  title: "钟懿 | IT运维工程师",
 };
 
 export default function OpsPage() {
