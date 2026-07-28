@@ -8,22 +8,23 @@
     "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "OpenRouter API", "AI Agent"],
     "image": "/images/projects/resume-assistant-cover.jpg",
     "images": ["/images/projects/resume-assistant-1.jpg"],
-    "githubUrl": "https://github.com/zhongyi/resume-assistant",
+    "githubUrl": "https://github.com/123zhongyi12-sketch/resume-interview-agent",
     "year": "2026",
     "resumeTargets": ["presales", "ops", "cloud-security"],
     "summary": "这是一个具备面试流程控制能力的AI Agent，非简单问答。它基于岗位JD+分析结果+对话上下文进行推理，具备连续提问、结构化评分、自动生成总结报告等核心能力。"
   },
   {
     "slug": "cloud-architecture",
-    "title": "14天自主设计云架构并部署",
+    "title": "模拟企业级混合云架构设计与全栈交付",
     "category": "achievement",
-    "description": "独立在14天内完成云上架构设计并成功部署，涵盖计算、网络、存储、安全等核心服务",
-    "tags": ["华为云", "云架构", "部署", "网络", "安全"],
-    "image": "/images/projects/cloud-architecture-cover.jpg",
-    "images": ["/images/projects/cloud-architecture-1.jpg"],
+    "description": "针对企业级需求，独立完成从需求分析、架构设计、容器化改造、业务迁移到运维保障的全栈云架构交付",
+    "tags": ["华为云", "混合云架构", "Docker/K8s", "DRS迁移", "可观测体系"],
+    "techStack": ["云全栈产品", "Docker", "K8s", "Linux", "MySQL", "LTS/APM/CES"],
+    "image": "/content/projects/cloud-architecture/images/cloud-arch-deploy.png",
+    "images": ["/content/projects/cloud-architecture/images/cloud-arch-deploy.png"],
     "year": "2026",
     "resumeTargets": ["presales", "ops", "cloud-security"],
-    "summary": "在14天时间内，独立完成从需求分析、架构设计到部署上线的全流程，充分展示了扎实的云计算架构功底和快速学习能力。"
+    "summary": "针对企业开发测试环境隔离、数据安全保障及业务连续可靠性诉求，设计双区域多VPC架构，完成Docker容器化改造与K8s编排，实现灰度发布与弹性伸缩，系统高可用性提升60%。"
   },
   {
     "slug": "huawei-ict",
@@ -41,24 +42,18 @@
     "slug": "certifications",
     "title": "华为认证体系",
     "category": "certification",
-    "description": "HCIE(云计算)、HCIP(大数据)、HCIA(AI)、云迁移工作级、解决方案架构工作级",
+    "description": "HCIE(云计算)、HCIP(大数据)、HCIA(AI)、云迁移工作级、解决方案架构工作级、云技术开发认证",
     "tags": ["HCIE", "HCIP", "HCIA", "华为认证"],
-    "image": "/images/projects/certifications-cover.jpg",
-    "images": [],
+    "image": "/content/projects/certifications/images/hcie-cert.png",
+    "images": [
+      "/content/projects/certifications/images/hcie-cert.png",
+      "/content/projects/certifications/images/hcip-cert.png",
+      "/content/projects/certifications/images/hcia-cert.png",
+      "/content/projects/certifications/images/arch-cert.png",
+      "/content/projects/certifications/images/migration-cert.png"
+    ],
     "year": "2025-2026",
     "resumeTargets": ["presales", "ops", "cloud-security"],
     "summary": "系统性地获得了从专家级(HCIE)到工程师级的华为认证体系，覆盖云计算、大数据、AI三大方向。"
-  },
-  {
-    "slug": "psychology-station",
-    "title": "学生会心理站站长",
-    "category": "achievement",
-    "description": "主导策划5+场大型活动，活动满意度95%以上，锻炼极强的跨部门沟通与资源整合能力",
-    "tags": ["团队管理", "活动策划", "沟通协调"],
-    "image": "/images/projects/psychology-station-cover.jpg",
-    "images": [],
-    "year": "2023-2024",
-    "resumeTargets": ["presales", "ops", "cloud-security"],
-    "summary": "作为学生会心理站站长，主导策划新生破冰、元宵游园会等5+场大型活动，覆盖全院师生。从方案撰写、预算申报到物资调配全流程负责，活动满意度达95%以上。"
   }
 ]
