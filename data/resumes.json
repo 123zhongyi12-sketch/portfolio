@@ -28,53 +28,53 @@
   {
     "slug": "ops",
     "title": "云运维工程师",
-    "subtitle": "云计算架构 · 自动化 · 运维管理",
-    "about": "拥有HCIE(云计算)、HCIP(大数据)、HCIA(AI)等华为认证，具备独立设计云上架构并成功部署的实践经验。掌握云计算、大数据、AI等多领域技术栈，具备扎实的技术功底和快速学习能力。",
+    "subtitle": "虚拟化 · 容器编排 · 自动化运维",
+    "about": "具备Linux、虚拟化及云计算基础，熟悉基础设施的运维与调优。具备良好的问题定位和故障排查能力，学习能力强，执行力强，能够快速适应企业运维环境，保障业务持续稳定运行。",
     "skills": [
-      "华为云IaaS/PaaS全栈产品",
-      "云架构设计与迁移",
-      "Docker & Kubernetes",
-      "Linux运维 (Ubuntu/CentOS)",
-      "Python自动化脚本",
-      "LTS/CES/APM可观测体系",
-      "计算机网络与安全",
-      "OpenStack & FusionComputer"
+      "虚拟化与容器(VMware/KVM/Docker/K8s)",
+      "操作系统与存储(X86/RAID/LVM/NAS/SAN)",
+      "Linux运维(Ubuntu/CentOS/Shell)",
+      "云平台管理(OpenStack/FusionCompute)",
+      "华为云全栈(IAM/HSS/LTS/CES/APM)",
+      "自动化运维(Python/Shell/Git/Compose)",
+      "可观测体系(Metrics-Logs-Trace)",
+      "园区网络(eNSP/VLAN/OSPF/ACL)"
     ],
     "softSkills": [
+      "故障排查与问题定位",
       "技术文档撰写",
       "跨团队协作",
-      "故障排查与分析",
       "快速学习能力",
       "项目管理",
       "抗压与执行力"
     ],
     "projectOrder": ["cloud-architecture", "huawei-ict", "certifications"],
-    "highlights": ["HCIE(云计算)专家级认证", "14天自主云架构部署", "HCIP(大数据)认证", "HCIA(AI)认证"]
+    "highlights": ["HCIE(云计算)专家级认证", "Docker/K8s容器化", "华为云全栈运维", "自动化运维能力"]
   },
   {
     "slug": "cloud-security",
     "title": "云安全工程师",
     "subtitle": "云安全 · 合规 · 防护方案",
-    "about": "拥有HCIE(云计算)、HCIP(大数据)、HCIA(AI)等多领域华为认证，具备从底层架构到上层应用的安全视角。熟悉云安全架构设计、合规要求和最佳实践。",
+    "about": "具备云安全加固思想及云计算技术基础，对云平台安全、基础设施安全、应用安全等有浓厚兴趣，具备强大的自我驱动力和学习能力。能够将企业级需求拆解为具体技术问题，并通过实践寻找解决方案。坚持「任何人对资源的访问使用只能保障合法人的合法权益，通过合法方式在合法范围内访问」的安全原则。",
     "skills": [
-      "华为云安全体系(HSS/ACL)",
-      "等保合规与安全基线",
-      "云上网络与VPC设计",
-      "Docker & K8s安全",
-      "Linux安全加固",
-      "IAM与访问控制",
-      "数据加密与证书管理",
-      "安全评估与审计"
+      "云平台安全(VPC/安全组/ACL/HSS)",
+      "IAM与访问控制(最小权限原则)",
+      "容器安全(Docker/K8s/RBAC/Namespace)",
+      "安全基线加固与等保合规",
+      "Linux安全与Python自动化",
+      "网络安全(TCP/IP/eNSP/ACL)",
+      "数据库与存储安全(MySQL/OceanStor)",
+      "安全审计与日志分析(LTS/CES)"
     ],
     "softSkills": [
       "安全方案设计",
+      "合规分析与风险评估",
       "技术文档撰写",
-      "合规分析与评估",
       "跨团队沟通",
       "客户需求理解",
       "抗压与执行力"
     ],
-    "projectOrder": ["huawei-ict", "certifications", "cloud-architecture"],
-    "highlights": ["HCIE(云计算)认证", "华为ICT全球一等奖", "云迁移工作级认证", "解决方案架构认证"]
+    "projectOrder": ["cloud-architecture", "huawei-ict", "certifications"],
+    "highlights": ["HCIE(云计算)认证", "华为ICT全球一等奖", "云安全架构设计", "IAM最小权限实践"]
   }
 ]
