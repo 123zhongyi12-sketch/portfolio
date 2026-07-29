@@ -11,6 +11,8 @@ const strengths: Record<string, string> = {
     "具备Linux、虚拟化及容器技术基础，熟悉Docker容器化部署与Kubernetes编排，能够独立完成企业级应用的容器化改造与集群管理。熟悉基础设施的运维与调优，具备良好的问题定位和故障排查能力，学习能力强，执行力强，能够快速适应企业运维环境，保障业务持续稳定运行。",
   cloudSecurity:
     "具备云安全加固思想及云计算技术基础，对云平台安全、基础设施安全、应用安全等有浓厚兴趣，具备强大的自我驱动力和学习能力。能够将企业级需求拆解为具体技术问题，并通过实践寻找解决方案。坚持任何人对资源的访问使用只能保障合法人的合法权益的安全原则。",
+  general:
+    "对云和AI有浓厚的学习兴趣，掌握Python、熟悉Go语言，执行力强，理解AI/LLM原理，对技术的更新迭代保持热切关注。皮实抗压，对事情认真负责，待人友好热情，富有团队凝聚力，沟通能力强。具备云计算全栈架构设计与交付能力、Docker/K8s容器化全栈交付与AI Agent应用开发实践经验。",
 };
 
 export default function HeroSection({ resumeSlug }: HeroSectionProps) {
@@ -63,8 +65,8 @@ export default function HeroSection({ resumeSlug }: HeroSectionProps) {
       </h1>
       {resume && (
         <>
-          <p className="relative mb-2 text-xl text-accent-secondary">{resume.title}</p>
-          <p className="relative mb-6 text-text-muted">{resume.subtitle}</p>
+          {resume.title && <p className="relative mb-2 text-xl text-accent-secondary">{resume.title}</p>}
+          {resume.subtitle && <p className="relative mb-6 text-text-muted">{resume.subtitle}</p>}
 
           {/* 高亮标签 */}
           <div className="relative flex flex-wrap justify-center gap-3">

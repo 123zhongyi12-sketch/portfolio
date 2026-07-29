@@ -49,7 +49,7 @@
     "image": "/content/projects/cloud-architecture/images/cloud-arch-deploy.png",
     "images": ["/content/projects/cloud-architecture/images/cloud-arch-deploy.png"],
     "year": "2026",
-    "resumeTargets": ["presales", "ops", "cloud-security"],
+    "resumeTargets": ["presales", "ops", "cloud-security", "general"],
     "summary": "针对企业开发测试环境隔离、数据安全保障及业务连续可靠性诉求，设计双区域多VPC架构，完成Docker容器化改造与K8s编排，实现灰度发布与弹性伸缩，系统高可用性提升60%。"
   },
   {
@@ -61,7 +61,7 @@
     "image": "/images/projects/huawei-ict-cover.jpg",
     "images": ["/images/projects/huawei-ict-cert.jpg"],
     "year": "2026",
-    "resumeTargets": ["presales", "ops", "cloud-security"],
+    "resumeTargets": ["presales", "ops", "cloud-security", "general"],
     "summary": "在华为ICT大赛全球总决赛云赛道中获得全球一等奖，与全球顶尖选手同台竞技，展现了扎实的云计算技术实力。"
   },
   {
@@ -79,7 +79,7 @@
       "/content/projects/certifications/images/05-migration-cert.png"
     ],
     "year": "2025-2026",
-    "resumeTargets": ["presales", "ops", "cloud-security"],
+    "resumeTargets": ["presales", "ops", "cloud-security", "general"],
     "summary": "系统性地获得了从专家级(HCIE)到工程师级的华为认证体系，覆盖云计算、大数据、AI三大方向。"
   }
 ]

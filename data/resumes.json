@@ -52,6 +52,32 @@
     "highlights": ["HCIE(云计算)专家级认证", "Docker/K8s容器化", "华为云全栈运维", "自动化运维能力"]
   },
   {
+    "slug": "general",
+    "title": "",
+    "subtitle": "",
+    "about": "对云和AI有浓厚的学习兴趣，掌握python、熟悉go语言，执行力强，理解AI/LLM原理，对技术的更新迭代保持热切关注，皮实抗压，对事情认真负责，待人友好热情，富有团队凝聚力，沟通能力强。",
+    "skills": [
+      "华为云IaaS/PaaS全栈架构设计",
+      "Docker容器化 & Kubernetes编排",
+      "云迁移(SMS/OMS/DRS)与运维(LTS/CES/APM)",
+      "云安全加固(IAM/HSS/安全组/ACL)",
+      "Python自动化 & Flask全栈开发",
+      "AI/LLM & Agent应用开发",
+      "Linux (Ubuntu/CentOS/Shell)",
+      "OpenStack & FusionComputer & KVM"
+    ],
+    "softSkills": [
+      "快速学习与自我驱动",
+      "沟通协调与团队合作",
+      "活动策划与统筹执行",
+      "公众演讲与表达",
+      "抗压与现场应变",
+      "责任心与执行力"
+    ],
+    "projectOrder": ["huawei-ict", "certifications", "cloud-architecture"],
+    "highlights": ["华为ICT大赛全球一等奖", "HCIE(云计算)认证", "Docker/K8s容器化全栈交付", "AI面试助手 & 心电AI检测"]
+  },
+  {
     "slug": "cloud-security",
     "title": "云安全工程师",
     "subtitle": "云安全 · 合规 · 防护方案",

@@ -18,6 +18,7 @@ export function generateMetadata(): Metadata {
     presales: "钟懿 | 解决方案技术支持工程师",
     ops: "钟懿 | IT运维工程师",
     "cloud-security": "钟懿 | 云安全工程师",
+    general: "钟懿",
   };
   return { title: slug && titles[slug] ? titles[slug] : "钟懿 | 解决方案技术支持工程师" };
 }
