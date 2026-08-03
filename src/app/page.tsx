@@ -15,6 +15,14 @@ import { getProfile, getResume, getProjectsForResume } from "@/lib/data";
 const validSlugs = ["presales", "ops", "cloud-security", "general"];
 const defaultSlug = "presales";
 
+// 短参数代号映射: ?r=p / ?r=o / ?r=c / ?r=g
+const shortCodeMap: Record<string, string> = {
+  p: "presales",
+  o: "ops",
+  c: "cloud-security",
+  g: "general",
+};
+
 const titles: Record<string, string> = {
   presales: "钟懿 | 解决方案技术支持工程师",
   ops: "钟懿 | IT运维工程师",
@@ -31,9 +39,12 @@ function ResumeContent() {
     setMounted(true);
   }, []);
 
-  const urlSlug = searchParams.get("resume");
+  const urlSlug = searchParams.get("resume") || searchParams.get("r");
+  const shortCode = searchParams.get("r");
   const envSlug = process.env.NEXT_PUBLIC_RESUME_SLUG;
-  const resumeSlug = (urlSlug && validSlugs.includes(urlSlug)) ? urlSlug
+  // 优先级: 短代号 > 完整 slug > 环境变量
+  const resumeSlug = (shortCode && shortCodeMap[shortCode]) ? shortCodeMap[shortCode]
+    : (urlSlug && validSlugs.includes(urlSlug)) ? urlSlug
     : (envSlug && validSlugs.includes(envSlug)) ? envSlug
     : null;
 
@@ -47,7 +58,7 @@ function ResumeContent() {
   // Redirect to default if no valid slug
   useEffect(() => {
     if (mounted && !resumeSlug) {
-      router.replace(`/?resume=${defaultSlug}`);
+      router.replace(`/?r=p`);
     }
   }, [mounted, resumeSlug, router]);
 
