@@ -1,5 +1,7 @@
-import { redirect } from "next/navigation";
-import type { Metadata } from "next";
+"use client";
+
+import { useSearchParams, useRouter } from "next/navigation";
+import { useEffect, useState, Suspense } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
@@ -8,37 +10,55 @@ import SkillCloud from "@/components/SkillCloud";
 import EducationSection from "@/components/EducationSection";
 import CampusSection from "@/components/CampusSection";
 import PortfolioSection from "@/components/PortfolioSection";
-import { getProfile, getResume, getProjectsForResume, getAllResumes } from "@/lib/data";
+import { getProfile, getResume, getProjectsForResume } from "@/lib/data";
 
-export const dynamic = "force-static";
+const validSlugs = ["presales", "ops", "cloud-security", "general"];
+const defaultSlug = "presales";
 
-export function generateMetadata(): Metadata {
-  const slug = process.env.NEXT_PUBLIC_RESUME_SLUG;
-  const titles: Record<string, string> = {
-    presales: "钟懿 | 解决方案技术支持工程师",
-    ops: "钟懿 | IT运维工程师",
-    "cloud-security": "钟懿 | 云安全工程师",
-    general: "钟懿",
-  };
-  return { title: slug && titles[slug] ? titles[slug] : "钟懿 | 解决方案技术支持工程师" };
-}
+const titles: Record<string, string> = {
+  presales: "钟懿 | 解决方案技术支持工程师",
+  ops: "钟懿 | IT运维工程师",
+  "cloud-security": "钟懿 | 云安全工程师",
+  general: "钟懿",
+};
 
-export default function Home() {
-  const resumeSlug = process.env.NEXT_PUBLIC_RESUME_SLUG;
+function ResumeContent() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const [mounted, setMounted] = useState(false);
 
-  // If no env var set, redirect to presales (default behavior)
-  if (!resumeSlug) {
-    redirect("/presales");
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const urlSlug = searchParams.get("resume");
+  const envSlug = process.env.NEXT_PUBLIC_RESUME_SLUG;
+  const resumeSlug = (urlSlug && validSlugs.includes(urlSlug)) ? urlSlug
+    : (envSlug && validSlugs.includes(envSlug)) ? envSlug
+    : null;
+
+  // 更新页面标题
+  useEffect(() => {
+    if (resumeSlug && titles[resumeSlug]) {
+      document.title = titles[resumeSlug];
+    }
+  }, [resumeSlug]);
+
+  // Redirect to default if no valid slug
+  useEffect(() => {
+    if (mounted && !resumeSlug) {
+      router.replace(`/?resume=${defaultSlug}`);
+    }
+  }, [mounted, resumeSlug, router]);
+
+  if (!mounted || !resumeSlug) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-dark-bg">
+        <p className="text-text-muted">加载中...</p>
+      </div>
+    );
   }
 
-  // Validate the slug
-  const resumes = getAllResumes();
-  const validSlugs = resumes.map((r) => r.slug);
-  if (!validSlugs.includes(resumeSlug)) {
-    redirect("/presales");
-  }
-
-  // Render the standalone site for the specified resume
   const profile = getProfile();
   const resume = getResume(resumeSlug)!;
   const projects = getProjectsForResume(resumeSlug);
@@ -71,5 +91,17 @@ export default function Home() {
       </main>
       <Footer />
     </>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-dark-bg">
+        <p className="text-text-muted">加载中...</p>
+      </div>
+    }>
+      <ResumeContent />
+    </Suspense>
   );
 }
