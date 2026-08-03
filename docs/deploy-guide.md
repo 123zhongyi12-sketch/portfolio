@@ -2,13 +2,55 @@
 
 ## 概述
 
-当前代码仓库包含三个简历方向：售前、运维、云安全。通过设置环境变量 `NEXT_PUBLIC_RESUME_SLUG`，可以在 Vercel 上部署为三个独立的站点，每个站点绑定自己的域名。
+当前代码仓库包含四个简历方向：售前、运维、云安全、通用。通过 URL 参数切换：
+
+| 参数 | 内容 |
+|------|------|
+| `?r=p` 或 `?resume=presales` | 解决方案技术支持工程师 |
+| `?r=o` 或 `?resume=ops` | IT运维工程师 |
+| `?r=c` 或 `?resume=cloud-security` | 云安全工程师 |
+| `?r=g` 或 `?resume=general` | 通用简历 |
+
+也可以设置环境变量 `NEXT_PUBLIC_RESUME_SLUG`，在 Vercel 上部署为独立的站点，每个站点绑定自己的域名。
 
 ## 前提条件
 
 - 已有 GitHub 账号，且当前仓库已推送到 `123zhongyi12-sketch/portfolio`
 - 已有 Vercel 账号（目前 `zhyi.vercel.app` 已部署）
+- 已有 Cloudflare 账号（目前 `zy-bqw.pages.dev` 已部署）
 - 准备两个新域名（例如 `yunwei.你的域名.com` 和 `anquan.你的域名.com`），或者在 Vercel 免费使用 `xxx.vercel.app` 子域名
+
+---
+
+## Cloudflare Pages 部署（已配置）
+
+站点地址：`https://zy-bqw.pages.dev`，通过 URL 参数切换四个简历：
+
+```
+https://zy-bqw.pages.dev/?r=p   售前
+https://zy-bqw.pages.dev/?r=o   运维
+https://zy-bqw.pages.dev/?r=c   云安全
+https://zy-bqw.pages.dev/?r=g   通用
+```
+
+### 部署配置（重建时的关键设置）
+
+Cloudflare Pages 项目创建时，**Framework preset 必须选择「Next.js (Static HTML Export)」**，不是普通的 Next.js：
+
+| 设置项 | 值 |
+|--------|-----|
+| Project name | `zy`（域名 = 项目名 + `.pages.dev`，如果被占用会自动加后缀） |
+| Framework preset | **Next.js (Static HTML Export)** |
+| Build command | `npx next build`（自动填充） |
+| Build output directory | `out`（自动填充） |
+
+> ⚠️ 如果选了普通 Next.js 预设，Cloudflare 会用 OpenNext 适配器（`npx opennextjs-cloudflare build`）导致部署失败。静态导出站点必须选 Static HTML Export 预设。
+
+### 注意
+
+- 项目创建后无法再改构建预设，只能删除重建
+- `public/_redirects`（`/* /index.html 200`）仅作为 SPA 回退，静态文件优先返回，不影响 `/portfolio`、`/projects/xxx` 等独立页面
+- 更新代码推送到 GitHub 后 Cloudflare 会自动重新部署
 
 ---
 
@@ -84,6 +126,7 @@
 | 售前（已有） | `zhyi.vercel.app` | 解决方案售前工程师 |
 | 运维（新建） | `portfolio-ops.vercel.app` | 云运维工程师 |
 | 云安全（新建） | `portfolio-security.vercel.app` | 云安全工程师 |
+| Cloudflare（已有） | `zy-bqw.pages.dev/?r=p` | 按 URL 参数切换四种简历 |
 
 打开每个站点确认：
 - ✅ 首页直接显示对应简历
