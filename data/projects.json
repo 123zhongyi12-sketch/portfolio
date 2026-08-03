@@ -41,16 +41,16 @@
   },
   {
     "slug": "cloud-architecture",
-    "title": "模拟企业级混合云架构设计与全栈交付",
+    "title": "企业级Web平台部署与自动化运维实践",
     "category": "achievement",
-    "description": "针对企业级需求，独立完成从需求分析、架构设计、容器化改造、业务迁移到运维保障的全栈云架构交付",
-    "tags": ["华为云", "混合云架构", "Docker/K8s", "DRS迁移", "可观测体系"],
-    "techStack": ["云全栈产品", "Docker", "K8s", "Linux", "MySQL", "LTS/APM/CES"],
+    "description": "基于Linux、KVM虚拟化环境及华为云平台，模拟企业开发、运维业务场景，完成基础环境部署、数据服务建设、网络安全规划、应用交付、存储验证及自动化可观测运维等基础设施建设",
+    "tags": ["华为云", "Docker/K8s", "自动化运维", "可观测体系", "VPC网络"],
+    "techStack": ["Linux", "KVM", "Docker", "Kubernetes", "MySQL", "Redis", "华为云", "Shell", "Python"],
     "image": "/content/projects/cloud-architecture/images/cloud-arch-deploy.png",
     "images": ["/content/projects/cloud-architecture/images/cloud-arch-deploy.png"],
     "year": "2026",
     "resumeTargets": ["presales", "ops", "cloud-security", "general"],
-    "summary": "针对企业开发测试环境隔离、数据安全保障及业务连续可靠性诉求，设计双区域多VPC架构，完成Docker容器化改造与K8s编排，实现灰度发布与弹性伸缩，系统高可用性提升60%。"
+    "summary": "基于Linux、KVM虚拟化环境及华为云平台，模拟企业开发、运维业务场景，完成基础环境部署、数据服务建设、网络安全规划、应用交付、存储验证及自动化可观测运维等基础设施建设。使用Docker完成Java、PHP等业务容器化部署，在Kubernetes环境完成Deployment、StatefulSet、Service、Ingress等资源编排，实现高可用性提升60%，性能提升30%。"
   },
   {
     "slug": "huawei-ict",

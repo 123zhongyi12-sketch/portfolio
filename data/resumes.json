@@ -28,28 +28,28 @@
   {
     "slug": "ops",
     "title": "IT运维工程师",
-    "subtitle": "虚拟化 · 容器编排 · 自动化运维",
-    "about": "具备Linux、虚拟化及云计算基础，熟悉基础设施的运维与调优。具备良好的问题定位和故障排查能力，学习能力强，执行力强，能够快速适应企业运维环境，保障业务持续稳定运行。",
+    "subtitle": "Linux运维 · 容器编排 · 自动化运维",
+    "about": "具备Linux、数据库、容器及云计算基础，熟悉IT基础运维，具备良好的问题分析和故障排查能力。学习能力强，责任心强，执行力佳，能够快速适应企业运维工作，持续深耕IT运维方向。",
     "skills": [
-      "虚拟化与容器(VMware/KVM/Docker/K8s)",
-      "操作系统与存储(X86/RAID/LVM/NAS/SAN)",
-      "Linux运维(Ubuntu/CentOS/Shell)",
-      "云平台管理(OpenStack/FusionCompute)",
-      "华为云全栈(IAM/HSS/LTS/CES/APM)",
-      "自动化运维(Python/Shell/Git/Compose)",
-      "可观测体系(Metrics-Logs-Trace)",
-      "园区网络(eNSP/VLAN/OSPF/ACL)"
+      "Linux运维(Ubuntu/CentOS/Shell/systemd)",
+      "数据库与中间件(MySQL/Redis)",
+      "虚拟化与容器(KVM/Docker/K8s)",
+      "自动化运维(Python/Shell/OpenCode)",
+      "服务器与存储(X86/NAS/SAN/NFS/iSCSI)",
+      "网络与园区网(eNSP/VLAN/OSPF/TCP/IP)",
+      "云平台技术(华为云/OpenStack/FusionCompute)",
+      "可观测体系(LTS/APM/CES/SMN告警)"
     ],
     "softSkills": [
       "故障排查与问题定位",
+      "日志分析与监控运维",
       "技术文档撰写",
       "跨团队协作",
       "快速学习能力",
-      "项目管理",
-      "抗压与执行力"
+      "责任心与执行力"
     ],
     "projectOrder": ["cloud-architecture", "huawei-ict", "certifications"],
-    "highlights": ["HCIE(云计算)专家级认证", "Docker/K8s容器化", "华为云全栈运维", "自动化运维能力"]
+    "highlights": ["华为ICT大赛全球一等奖", "HCIE(云计算)认证", "Docker/K8s容器化", "自动化运维能力"]
   },
   {
     "slug": "general",
