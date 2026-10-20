@@ -40,6 +40,8 @@ export interface WorkExperience {
   role: string;
   period: string;
   overview: string;
+  /** 限定在哪些简历方向展示；不填则全站展示 */
+  resumeTargets?: string[];
   projects: WorkExperienceProject[];
 }
 

@@ -37,6 +37,12 @@ export function getWorkExperiences(): WorkExperience[] {
   return experiencesData as WorkExperience[];
 }
 
+export function getWorkExperiencesForResume(resumeSlug: string): WorkExperience[] {
+  return (experiencesData as WorkExperience[]).filter(
+    (exp) => !exp.resumeTargets || exp.resumeTargets.includes(resumeSlug)
+  );
+}
+
 export function getProjects(): Project[] {
   return projectsData as Project[];
 }

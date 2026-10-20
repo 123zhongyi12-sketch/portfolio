@@ -1,8 +1,12 @@
-import { getWorkExperiences } from "@/lib/data";
+import { getWorkExperiencesForResume } from "@/lib/data";
 import { Building2, Briefcase } from "lucide-react";
 
-export default function ExperienceSection() {
-  const experiences = getWorkExperiences();
+interface ExperienceSectionProps {
+  resumeSlug: string;
+}
+
+export default function ExperienceSection({ resumeSlug }: ExperienceSectionProps) {
+  const experiences = getWorkExperiencesForResume(resumeSlug);
   if (experiences.length === 0) return null;
 
   return (
