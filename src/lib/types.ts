@@ -12,6 +12,11 @@ export interface Profile {
   };
 }
 
+export interface SkillDetail {
+  category: string;
+  description: string;
+}
+
 export interface Resume {
   slug: string;
   title: string;
@@ -19,8 +24,23 @@ export interface Resume {
   about: string;
   skills: string[];
   softSkills: string[];
+  skillDetails?: SkillDetail[];
   projectOrder: string[];
   highlights: string[];
+}
+
+export interface WorkExperienceProject {
+  name: string;
+  details: string[];
+}
+
+export interface WorkExperience {
+  company: string;
+  department: string;
+  role: string;
+  period: string;
+  overview: string;
+  projects: WorkExperienceProject[];
 }
 
 export interface Education {
@@ -51,7 +71,7 @@ export interface Project {
   images?: string[];
   githubUrl?: string;
   year: string;
-  resumeTargets: ("presales" | "ops" | "cloud-security")[];
+  resumeTargets: ("presales" | "ops" | "cloud-security" | "general")[];
   summary?: string;
 }
 

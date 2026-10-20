@@ -6,6 +6,7 @@ import SkillCloud from "@/components/SkillCloud";
 import EducationSection from "@/components/EducationSection";
 import CampusSection from "@/components/CampusSection";
 import PortfolioSection from "@/components/PortfolioSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import { getProfile, getResume, getProjectsForResume } from "@/lib/data";
 import type { Metadata } from "next";
 
@@ -26,8 +27,14 @@ export default function OpsPage() {
 
         <section id="skills" className="mx-auto max-w-4xl px-6 py-20">
           <h2 className="mb-8 text-center text-2xl font-bold">掌握技能</h2>
-          <SkillCloud skills={resume.skills} softSkills={resume.softSkills} />
+          <SkillCloud
+            skills={resume.skills}
+            softSkills={resume.softSkills}
+            details={resume.skillDetails}
+          />
         </section>
+
+        <ExperienceSection />
 
         <section id="projects" className="mx-auto max-w-6xl px-6 py-20">
           <h2 className="mb-8 text-center text-2xl font-bold">项目与成果</h2>

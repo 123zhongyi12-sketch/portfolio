@@ -41,16 +41,16 @@
   },
   {
     "slug": "cloud-architecture",
-    "title": "企业级Web平台部署与自动化运维实践",
+    "title": "企业级云上IT基础设施部署与容器化交付运维",
     "category": "achievement",
-    "description": "基于Linux、KVM虚拟化环境及华为云平台，模拟企业开发、运维业务场景，完成基础环境部署、数据服务建设、网络安全规划、应用交付、存储验证及自动化可观测运维等基础设施建设",
+    "description": "基于Linux、KVM虚拟化环境及华为云平台，模拟企业开发、测试业务场景，完成服务器部署、网络互联、容器化交付、共享存储及运维监控等基础设施建设",
     "tags": ["华为云", "Docker/K8s", "自动化运维", "可观测体系", "VPC网络"],
-    "techStack": ["Linux", "KVM", "Docker", "Kubernetes", "MySQL", "Redis", "华为云", "Shell", "Python"],
+    "techStack": ["Linux", "KVM", "Docker", "Kubernetes", "Nginx", "MySQL", "Redis", "华为云"],
     "image": "/content/projects/cloud-architecture/images/cloud-arch-deploy.png",
     "images": ["/content/projects/cloud-architecture/images/cloud-arch-deploy.png"],
     "year": "2026",
     "resumeTargets": ["presales", "ops", "cloud-security", "general"],
-    "summary": "基于Linux、KVM虚拟化环境及华为云平台，模拟企业开发、运维业务场景，完成基础环境部署、数据服务建设、网络安全规划、应用交付、存储验证及自动化可观测运维等基础设施建设。使用Docker完成Java、PHP等业务容器化部署，在Kubernetes环境完成Deployment、StatefulSet、Service、Ingress等资源编排，实现高可用性提升60%，性能提升30%。"
+    "summary": "个人独立完成企业级云上 IT 基础设施的部署与容器化交付运维：使用 Linux 与 KVM 完成服务器与虚拟化环境搭建，通过多 VPC、VPN、对等连接、安全组与 ACL 构建网络与安全体系；基于 Docker 完成 Java、PHP 等业务容器化部署，独立编写 Dockerfile 构建镜像并推送至 CCE 完成 K8s 业务编排，高可用性提升 60%，经 CodeArt 压力测试性能提升 30%；最终接入 LTS、APM、CES 与 SMN 告警，形成 Metrics-Logs-Trace 三位一体的可观测运维闭环。"
   },
   {
     "slug": "huawei-ict",

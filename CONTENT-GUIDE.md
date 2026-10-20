@@ -12,10 +12,34 @@
 |------|----------|
 | 个人信息 | `data/profile.json` |
 | 简历方向 | `data/resumes.json` |
+| 实习经历 | `data/experiences.json` |
+| 校园经历 | `data/campus.json` |
+| 教育背景 | `data/education.json` |
 | 项目列表 | `data/projects.json` |
 | 项目详情 | `content/projects/<slug>/index.md` |
 | 项目文件树 | `content/projects/<slug>/structure.json` |
 | 项目图片 | `public/content/projects/<slug>/images/` |
+
+---
+
+## 编辑实习经历
+
+编辑 `data/experiences.json`，目前仅在运维页（`/ops`）展示：
+
+```json
+[
+  {
+    "company": "公司名",
+    "department": "部门 / 业务线",
+    "role": "岗位",
+    "period": "2026.08 – 至今",
+    "overview": "整体职责概述",
+    "projects": [
+      { "name": "客户 / 项目名", "details": ["第一条工作内容", "第二条工作内容"] }
+    ]
+  }
+]
+```
 
 ---
 
@@ -51,7 +75,9 @@
 - `subtitle` — 页面副标题
 - `summary` — 个人概述
 - `projectOrder` — 项目显示顺序（slug 数组）
-- `skills` — 技能列表
+- `skills` — 技术栈标签（标签云）
+- `softSkills` — 软技能标签
+- `skillDetails` — （可选）能力明细，每项 `{ category, description }`，用于展开详细描述
 - `experience` — 经历列表
 
 **示例：添加技能**

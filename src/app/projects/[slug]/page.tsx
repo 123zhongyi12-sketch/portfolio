@@ -83,6 +83,18 @@ export default async function ProjectPage({ params }: Props) {
   );
 }
 
+function renderInline(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") ? (
+      <strong key={i} className="font-semibold text-text-primary">
+        {part.slice(2, -2)}
+      </strong>
+    ) : (
+      <span key={i}>{part}</span>
+    )
+  );
+}
+
 function ProjectDetailContent({
   project,
   content,
@@ -97,9 +109,21 @@ function ProjectDetailContent({
       <div className="rounded-lg border border-dark-border bg-dark-card p-6">
         <h2 className="mb-4 text-xl font-bold">项目介绍</h2>
         <div className="prose prose-invert max-w-none text-text-secondary">
-          {content.markdown.split("\n").map((line: string, i: number) => (
-            line.trim() ? <p key={i} className="mb-3 last:mb-0">{line}</p> : null
-          ))}
+          {content.markdown.split("\n").map((line: string, i: number) => {
+            if (!line.trim()) return null;
+            if (line.startsWith("### ")) {
+              return (
+                <h3 key={i} className="mb-2 mt-6 text-base font-semibold text-accent first:mt-0">
+                  {line.slice(4)}
+                </h3>
+              );
+            }
+            return (
+              <p key={i} className="mb-3 last:mb-0">
+                {renderInline(line)}
+              </p>
+            );
+          })}
         </div>
       </div>
 

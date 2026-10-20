@@ -27,29 +27,53 @@
   },
   {
     "slug": "ops",
-    "title": "IT运维工程师",
-    "subtitle": "Linux运维 · 容器编排 · 自动化运维",
-    "about": "具备Linux、数据库、容器及云计算基础，熟悉IT基础运维，具备良好的问题分析和故障排查能力。学习能力强，责任心强，执行力佳，能够快速适应企业运维工作，持续深耕IT运维方向。",
+    "title": "IT运维工程师 / IT技术支持工程师",
+    "subtitle": "Linux运维 · 虚拟化与容器 · 云平台交付",
+    "about": "具备Linux、虚拟化、容器及云计算基础，熟悉服务器部署与基础运维，具备良好的问题分析和故障排查能力。学习能力强，责任心强，执行力佳，能够快速适应企业运维工作，持续深耕IT运维/技术支持方向。",
     "skills": [
-      "Linux运维(Ubuntu/CentOS/Shell/systemd)",
-      "数据库与中间件(MySQL/Redis)",
       "虚拟化与容器(KVM/Docker/K8s)",
-      "自动化运维(Python/Shell/OpenCode)",
-      "服务器与存储(X86/NAS/SAN/NFS/iSCSI)",
-      "网络与园区网(eNSP/VLAN/OSPF/TCP/IP)",
-      "云平台技术(华为云/OpenStack/FusionCompute)",
-      "可观测体系(LTS/APM/CES/SMN告警)"
+      "Linux运维(Ubuntu/CentOS/systemd)",
+      "服务器与存储(RAID/LVM/NAS/SAN)",
+      "云平台(华为云/OpenStack/FusionCompute)",
+      "自动化运维(OpenCode/Git/Docker Compose)",
+      "网络与园区网(eNSP/VLAN/OSPF/ACL)"
     ],
     "softSkills": [
-      "故障排查与问题定位",
-      "日志分析与监控运维",
-      "技术文档撰写",
-      "跨团队协作",
+      "问题分析与故障定位",
+      "日常巡检与变更管理",
+      "技术文档与方案撰写",
+      "跨团队协作与沟通",
       "快速学习能力",
       "责任心与执行力"
     ],
+    "skillDetails": [
+      {
+        "category": "虚拟化与K8S",
+        "description": "理解KVM虚拟化架构及资源管理机制；掌握Docker镜像构建、容器生命周期管理及网络模型；掌握Kubernetes控制面与数据面架构，能独立部署3master高可用集群，熟悉Deployment、StatefulSet、Service、Ingress等核心资源对象，可完成容器化应用部署、滚动更新及基础故障排查。"
+      },
+      {
+        "category": "Linux运维",
+        "description": "熟悉Ubuntu/CentOS系统运维，掌握Linux用户权限、systemd服务管理及日志分析（journalctl、tail）；熟悉磁盘分区、LVM、文件系统、NFS挂载及网络配置，具备常见系统故障定位与服务恢复能力。"
+      },
+      {
+        "category": "服务器与存储",
+        "description": "理解X86服务器硬件架构，熟悉CPU、内存、SSD/HDD、网卡等设备；理解RAID、LVM、EXT4/XFS文件系统及磁盘管理、扩容机制；掌握NAS、SAN、对象存储架构及NFS等主流存储协议，熟悉OceanStor存储产品，具备企业级存储部署、共享配置及基础故障分析能力。"
+      },
+      {
+        "category": "云平台技术",
+        "description": "熟悉OpenStack、FusionCompute、华为云等云平台架构，能够完成华为全栈云资源部署；掌握IAM权限管理、HSS主机安全、LTS日志、CES监控等运维体系，具备基础设施交付及运维能力。"
+      },
+      {
+        "category": "自动化运维",
+        "description": "熟练使用OpenCode、Codex等Agent工具辅助问题定位与技术分析，具备基础自动化运维能力；熟悉Git、Maven、Docker Compose等开发与部署工具。"
+      },
+      {
+        "category": "网络与园区网架构",
+        "description": "基于华为eNSP完成园区网三层架构（接入/汇聚/核心）部署，掌握VLAN、OSPF、路由配置、DHCP、NAT、ACL等核心协议的理解、基础配置与联调，具备网络故障排查能力；掌握TCP/IP五层模型。"
+      }
+    ],
     "projectOrder": ["cloud-architecture", "huawei-ict", "certifications"],
-    "highlights": ["华为ICT大赛全球一等奖", "HCIE(云计算)认证", "Docker/K8s容器化", "自动化运维能力"]
+    "highlights": ["华为ICT大赛全球一等奖", "HCIE(云计算)认证", "K8s高可用集群交付", "企业级存储与巡检运维"]
   },
   {
     "slug": "general",
